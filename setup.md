@@ -1,7 +1,7 @@
 ---
 title: Setup
 ---
-FIXME
-
-
-{% include links.md %}
+> ## Prerequisites
+>
+> * No specific setup is required.
+{: .prereq}
