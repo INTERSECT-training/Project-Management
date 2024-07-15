@@ -164,7 +164,7 @@ called Scrumban! In this exercise, you will be using LEGOs :tm: to build a car.
 2. (4 min) Project backlog: Create a Kanban board for your project on one of the walls near you
    with the columns "To Do", "In Progress", and "Done". Create your "backlog" by writing the features
    or work to be done on the sticky notes and putting them in the "To Do" column.
-3. (2 min) Sprint planning: Decide what work will be completed this sprint. Move those sticky notes
+3. (1 min) Sprint planning: Decide what work will be completed this sprint. Move those sticky notes
    to the "In Progress" column.
 4. (4 min) Sprint work: **BUILD**!
 5. (2 min) Sprint review: Show what you have to your customer and get feedback. Make changes to
@@ -196,7 +196,7 @@ Instructions to give to the customers:
 > should then start asking you questions about the house: "How many wheels? How many
 > windows and doors?" (etc. etc.) They don't get as much time for this - only 4 minutes.
 > Then they go through a Kanban board task writing / backlog creation stage for 4 minutes.
-> They will then do a "sprint" / iteration and try to get something created in the next 6 minutes.
+> They will then do a "sprint" / iteration and try to get something created in the next few minutes.
 > They bring it back to you. You tell them what's right / wrong. They adjust their
 > Kanban board / plan their "sprint" (repeat for three total iterations).
 
