@@ -3,8 +3,11 @@ message: "If you use this lesson, please cite it as below."
 authors:
 - family-names: "Rumph"
   given-names: "Dave"
+- family-names: "Mundt"
+  given-names: "Miranda"
+  orcid: "https://orcid.org/0000-0002-5283-2138"
 title: "INTERSECT: Project Management"
 url: "https://intersect-training.org/Project-Management/"
 license-url: "https://github.com/INTERSECT-training/Project-Management/blob/main/LICENSE.md"
-version: 0.2.0
-date-released: 2023-07-07
+version: 0.3.0
+date-released: 2025-06-17
