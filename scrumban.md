@@ -137,15 +137,12 @@ Kanban is typically best for small to medium size projects.
 MoSCoW is a lightweight technique for prioritizing work typically done in the sprint planning meeting.
 This meeting's focus is on the next software release/sprint.
 
-MoSCoW stands for: 
-- Must have
-    - Without this, we don't have a useable release
-- Should have
-    - The release would be less valuable or compelling without this, but would still be worth releasing
-- Could have
-    - Nice to have, but not essential
-- Won't have
-    - Maybe not ever, but too much for this time
+MoSCoW stands for:
+
+- **Must have**: Without this, we don't have a useable release
+- **Should have**: The release would be less valuable or compelling without this, but would still be worth releasing
+- **Could have**: Nice to have, but not essential
+- **Won't have**: Maybe not ever, but too much for this time
 
 The priority of the sprint is to work first on **Must Haves** and then **Should Haves** (if there
 is time remaining in the sprint).
