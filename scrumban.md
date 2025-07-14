@@ -1,7 +1,7 @@
 ---
 title: "Agile Development"
 teaching: 5
-exercises: 30
+exercises: 45
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
@@ -23,7 +23,7 @@ exercises: 30
 **Scrum** (and its variants) is one of the most widely used Agile frameworks.
 Scrum is a lightweight process that aims to break work into time-boxed iterations.
 
-![](fig/scrum-process.png){alt='The Scrum Process - from Product goal to Sprint review'}
+![](fig/scrum-process.png){alt='The Scrum Process - an interative process that flows from Product goal to Sprint planning to development (in increments) to Sprint review, looping back'}
 
 ### Project Vision
 
@@ -161,10 +161,10 @@ called Scrumban! In this exercise, you will be using LEGOs :tm: to build a car.
 2. (4 min) Project backlog: Create a Kanban board for your project on one of the walls near you
    with the columns "To Do", "In Progress", and "Done". Create your "backlog" by writing the features
    or work to be done on the sticky notes and putting them in the "To Do" column.
-3. (1 min) Sprint planning: Decide what work will be completed this sprint. Move those sticky notes
+3. (2 min) Sprint planning: Decide what work will be completed this sprint. Move those sticky notes
    to the "In Progress" column.
-4. (4 min) Sprint work: **BUILD**!
-5. (2 min) Sprint review: Show what you have to your customer and get feedback. Make changes to
+4. (5 min) Sprint work: **BUILD**!
+5. (3 min) Sprint review: Show what you have to your customer and get feedback. Make changes to
     your Kanban board as necessary (e.g., move completed work to "Done", adjust work in "To Do" if
     need be).
 6. Repeat steps 3-5 two more times!
