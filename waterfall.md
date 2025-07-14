@@ -1,7 +1,7 @@
 ---
 title: "The Waterfall Model"
 teaching: 5
-exercises: 20
+exercises: 30
 
 ---
 
@@ -24,7 +24,7 @@ exercises: 20
 
 ## The Waterfall Model
 
-![](fig/waterfall.png){alt='The Waterfall model. Image from Wikimedia Commons.'}
+![](fig/waterfall.png){alt='The Waterfall model. The stages flow from requirements to design to implementation to verification to maintenance. Image from Wikimedia Commons.'}
 
 The Waterfall model consists of various stages that follow sequentially -- one after the other.
 The idea of having defined phases is to try to complete each phase before
@@ -53,11 +53,11 @@ we will consider the phases to be:
 ![](fig/house.png){alt='A house icon - created by VectorMachines on Flaticon.'}
 
 0. Split into 4 groups and grab a set of LEGOs :tm:.
-1. (6 min) Gather requirements from your customer. 
+1. (7 min) Gather requirements from your customer. 
    Ask important questions to help you determine what needs to be done to build their dream house!
-2. (4 min) Determine your design. How can you satisfy the requirements with your LEGOs?
-3. (8 min) Build the house!
-4. (2 min) Show it to your customer and see how you did.
+2. (5 min) Determine your design. How can you satisfy the requirements with your LEGOs?
+3. (12 min) Build the house!
+4. (3 min) Show it to your customer and see how you did.
 
 :::::::::: instructor
 
