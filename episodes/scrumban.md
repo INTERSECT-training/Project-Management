@@ -119,7 +119,7 @@ Agile does requirements gathering and design incrementally, mostly just before i
 Overall, Agile may be more costly than a well-executed waterfall approach, as
 long as requirements and design don't change!
 
-![](fig/agilevswaterfall.png){alt='A graph of project lifetime vs. effort for agile and waterfall'}
+![](fig/agilevswaterfall.png){alt='A graph of project lifetime vs. effort for agile and waterfall. Waterfall has large peaks in efforts at the beginning, followed by predictable iterations. Agile has smaller upfront cost but also has similar predictable iterations.'}
 
 ## Other Agile Methodologies
 
