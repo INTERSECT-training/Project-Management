@@ -26,7 +26,7 @@ methodologies surged in popularity because they are optimized to deal with poorl
 understood and/or changing requirements during development.
 They tend to incorporate other practices to improve software quality.
 
-![](fig/agile-cycle.png){alt='The Agile cycle, starting at Plan and ending at Review'}
+![](fig/agile-cycle.png){alt='The Agile cycle, starting at Plan, flowing to design, develop, test, deploy, and ending at Review'}
 
 ::::::::::::::::::::::::::::::::::::::::::  discussion
 
