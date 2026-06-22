@@ -216,7 +216,7 @@ uninterrupted block of time to succeed. See the Instructor Notes for the full sc
 
 ::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::: challenge 
+::::::::::::::::::::::::::::::::::::: challenge
 
 ## Scrumban
 
