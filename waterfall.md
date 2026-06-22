@@ -46,7 +46,7 @@ we will consider the phases to be:
 1. Verification
 1. Maintenance
 
-::::::::::::::::::::::::::::::::::::: challenge 
+::::::::::::::::::::::::::::::::::::: challenge
 
 ## Let's Build a House
 
