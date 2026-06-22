@@ -42,6 +42,19 @@ need project management.
 
 _But are you sure it's really just "one week"?_
 
+::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Project management for research software
+
+Research software has its own flavor of these questions. The "customer" might be your
+PI, your grant's aims, a collaborating lab, or simply **"future you"** trying to
+reproduce a result. "Release" might mean tagging a version for a paper, and
+"maintenance" might mean keeping code runnable long after the student who wrote it
+has graduated. Even a one-person project benefits from a little structure once it
+needs to outlive a single deadline.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 :::::::::::::::::::::::::::::::::::: challenge
 
 ## When do you need it?
@@ -54,15 +67,17 @@ What are some situations in which it might not be necessary?
 
 ## Software Development Process
 
-Below are (most) of the different phases of the software development process. 
+Below are (most) of the different phases of the software development process.
 
-1. Determine software requirements
-2. Software design 
-3. Implementation
-4. Software testing
-5. Software documentation
-6. Release/deploy the software to the customer 
-7. Ongoing maintenance
+| # | Phase | What happens | Typical output |
+|---|-------|--------------|----------------|
+| 1 | Requirements | Figure out what the software needs to do | A list of needs / user stories |
+| 2 | Design | Decide how it will be built | Architecture, interfaces, plans |
+| 3 | Implementation | Write the code | Working code |
+| 4 | Testing | Confirm it does what it should | Tests, bug reports |
+| 5 | Documentation | Explain how to use and maintain it | User and developer docs |
+| 6 | Release / Deploy | Get it to the people who use it | A usable version |
+| 7 | Maintenance | Keep it working and fix issues over time | Patches, updates |
 
 These phases can be mixed or (sometimes) reordered.
 This can happen for a variety of reasons.
@@ -73,8 +88,13 @@ Another thing to note is that the definition of roles vary.
 For example, the "customer" or "user" may also be the author of the software, or may be quite removed.
 
 There are many different methodologies to help organize the software development process.
-In the following sections, we will discuss some of the more popular methodologies
-such as the Waterfall model and Agile software development.
+In the rest of this lesson we will work through them in order:
+
+1. **The Waterfall model** — phases done sequentially
+2. **The Agile methodology** — iterative and responsive to change
+3. **Agile frameworks** — Scrum, Kanban, and MoSCoW in practice
+4. **Choosing a methodology** — how to decide which fits your project
+5. **GenAI in project management** — where LLMs help, and where they don't
 
 
 :::::::::::::::::::::::::::::::::::::::: keypoints

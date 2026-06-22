@@ -1,7 +1,7 @@
 ---
 title: "Agile Development"
-teaching: 5
-exercises: 45
+teaching: 20
+exercises: 35
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
@@ -24,6 +24,24 @@ exercises: 45
 Scrum is a lightweight process that aims to break work into time-boxed iterations.
 
 ![](fig/scrum-process.png){alt='The Scrum Process - an interative process that flows from Product goal to Sprint planning to development (in increments) to Sprint review, looping back'}
+
+::::::::::::::::::::::::: callout
+
+## Who's who in Scrum
+
+Scrum defines three roles. It helps to map them to today's exercise:
+
+| Role | Responsibility | In our exercise |
+|------|----------------|-----------------|
+| **Product Owner** | Owns the vision and prioritizes the backlog; represents the customer | The "customer" |
+| **Scrum Master** | Keeps the process running, removes blockers, protects the team | A designated member of your group |
+| **Development Team** | Builds the product; estimates and commits to the work | Your group |
+
+In research software these roles often blur — a PI might be the Product Owner, and
+a single developer may wear all three hats. The *responsibilities* still need an owner,
+even if the titles don't.
+
+:::::::::::::::::::::::::::::::
 
 ### Project Vision
 
@@ -77,6 +95,23 @@ to the product roadmap, risk/uncertainty, level of difficulty, etc.
 Implementation cost of the features is determined by the developers.
 The developers then commit to completing those tasks within the sprint.
 
+::::::::::::::::::::::::: callout
+
+## Estimating the work
+
+How do developers figure out "implementation cost"? Rather than guessing exact hours,
+Agile teams usually estimate *relative* effort:
+
+- **Story points** — an abstract size (often Fibonacci: 1, 2, 3, 5, 8...) capturing
+  effort, complexity, and uncertainty together.
+- **Planning poker** — everyone privately picks an estimate, then reveals
+  simultaneously; big disagreements spark a useful discussion before re-voting.
+- **T-shirt sizes** — quick, coarse sizing (S / M / L / XL) when points feel like overkill.
+
+The goal is to create a shared understanding of how much fits in a sprint.
+
+:::::::::::::::::::::::::::::::
+
 :::::::::::::::::::::: callout
 
 ## Defining the Work
@@ -101,6 +136,16 @@ They meet for daily stand-up meetings (generally 15 minutes) in which they discu
 what they did yesterday, what they plan to do today, and any blockers or issues
 that may have occurred.
 
+::::::::::::::::::::::::: callout
+
+## Definition of Done
+
+Teams agree up front on what **"done"** actually means — for example: code written,
+tests passing, reviewed, and documented. A shared *Definition of Done* keeps "done"
+from quietly meaning "works on my machine," and makes sprint reviews honest.
+
+:::::::::::::::::::::::::::::::
+
 ### Sprint Review
 
 At the end of the sprint is a sprint demo and a retrospective discussion.
@@ -113,39 +158,63 @@ had to be dealt with and what can be done better in future sprints.
 A sprint may include releasing/deploying software, or it may not. 
 This depends on where the team is with respect to the product roadmap.
 
-## Agile vs. Waterfall
-
-Agile does requirements gathering and design incrementally, mostly just before implementation.
-Overall, Agile may be more costly than a well-executed waterfall approach, as
-long as requirements and design don't change!
-
-![](fig/agilevswaterfall.png){alt='A graph of project lifetime vs. effort for agile and waterfall. Waterfall has large peaks in efforts at the beginning, followed by predictable iterations. Agile has smaller upfront cost but also has similar predictable iterations.'}
-
 ## Other Agile Methodologies
 
 ### Kanban
 
 Japanese for "Board," Kanban is a lightweight method for tracking work on a project.
-While it was originally done using a board marked into four columns and Post-It notes,
+While it was originally done using a board marked into columns and Post-It notes,
 it integrates well with GitHub.
 Kanban is typically best for small to medium size projects.
 
 ![](fig/kanban.png){alt='Two team members addressing a Kanban board with four columns.'}
 
+Scrum and Kanban are both Agile, but they emphasize different things:
+
+| | **Scrum** | **Kanban** |
+|---|-----------|------------|
+| Rhythm | Fixed-length sprints | Continuous flow |
+| Roles | Defined (PO, Scrum Master, team) | No required roles |
+| Change | Wait for next sprint | Add anytime |
+| Best for | Coordinating a team toward releases | Steady streams of incoming work |
+
+These aren't mutually exclusive — combining them is exactly what **Scrumban** (the
+upcoming exercise) is about.
+
 ### MoSCoW
 
-MoSCoW is a lightweight technique for prioritizing work typically done in the sprint planning meeting.
-This meeting's focus is on the next software release/sprint.
+MoSCoW is a lightweight technique for prioritizing work, typically done in the sprint
+planning meeting with a focus on the next release/sprint:
 
-MoSCoW stands for:
+| Category | Meaning |
+|----------|---------|
+| **Must have** | Without this, we don't have a usable release |
+| **Should have** | Important, but the release still works without it |
+| **Could have** | Nice to have, not essential |
+| **Won't have** | Not this time (maybe never) |
 
-- **Must have**: Without this, we don't have a useable release
-- **Should have**: The release would be less valuable or compelling without this, but would still be worth releasing
-- **Could have**: Nice to have, but not essential
-- **Won't have**: Maybe not ever, but too much for this time
+Work first on **Must haves**, then **Should haves** if time remains in the sprint.
 
-The priority of the sprint is to work first on **Must Haves** and then **Should Haves** (if there
-is time remaining in the sprint).
+:::::::::::::::::::::::::::::::::::::: callout
+
+## Which methodology should you use?
+
+We've now seen Waterfall and several Agile frameworks. How do they compare, and
+how do you choose between them for a real project? That's the focus of the next
+episode, **Choosing a Methodology**.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::: instructor
+
+## Suggested break point
+
+If you teach this lesson in two parts, this is the natural place to take your break.
+Session 1 ends here (Introduction through the Scrum/Kanban/MoSCoW theory); the
+Scrumban exercise below opens Session 2 while attendees are fresh, since it needs an
+uninterrupted block of time to succeed. See the Instructor Notes for the full schedule.
+
+::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::: challenge
 
@@ -161,13 +230,13 @@ called Scrumban! In this exercise, you will be using LEGOs :tm: to build a car.
 2. (4 min) Project backlog: Create a Kanban board for your project on one of the walls near you
    with the columns "To Do", "In Progress", and "Done". Create your "backlog" by writing the features
    or work to be done on the sticky notes and putting them in the "To Do" column.
-3. (2 min) Sprint planning: Decide what work will be completed this sprint. Move those sticky notes
-   to the "In Progress" column.
-4. (5 min) Sprint work: **BUILD**!
-5. (3 min) Sprint review: Show what you have to your customer and get feedback. Make changes to
+3. (2 min) Sprint planning: Decide what work will be completed this sprint. Prioritize your
+   backlog (try MoSCoW!) and move the sticky notes you commit to into the "In Progress" column.
+4. (4 min) Sprint work: **BUILD**!
+5. (2 min) Sprint review: Show what you have to your customer and get feedback. Make changes to
     your Kanban board as necessary (e.g., move completed work to "Done", adjust work in "To Do" if
     need be).
-6. Repeat steps 3-5 two more times!
+6. Repeat steps 3-5 two more times! (Three sprints total, ~8 min each.)
 
 :::::::::: instructor
 
@@ -193,9 +262,11 @@ Instructions to give to the customers:
 > should then start asking you questions about the house: "How many wheels? How many
 > windows and doors?" (etc. etc.) They don't get as much time for this - only 4 minutes.
 > Then they go through a Kanban board task writing / backlog creation stage for 4 minutes.
-> They will then do a "sprint" / iteration and try to get something created in the next few minutes.
-> They bring it back to you. You tell them what's right / wrong. They adjust their
-> Kanban board / plan their "sprint" (repeat for three total iterations).
+> They will then do a "sprint" / iteration (about 8 minutes each: 2 min plan, 4 min build,
+> 2 min review) and try to get something created. They bring it back to you. You tell them
+> what's right / wrong. They adjust their Kanban board / plan their next "sprint" (repeat for
+> three total iterations). The slightly longer planning time is intentional — prioritizing
+> and re-planning between sprints is the core skill this exercise teaches.
 
 :::::::::::::::::::::
 
@@ -207,8 +278,8 @@ How was that experience? What did you like? What did you dislike?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-That's it, folks! You now have knowledge of different project management methods
-for software projects.
+You now have hands-on experience with both ends of the methodology spectrum. Next,
+we'll look at how to **choose** between them.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
