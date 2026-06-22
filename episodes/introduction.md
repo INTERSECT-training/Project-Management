@@ -55,7 +55,7 @@ needs to outlive a single deadline.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::: challenge
+::::::::::::::::::::::::::::::::::::: challenge 
 
 ## When do you need it?
 
@@ -63,7 +63,7 @@ Brainstorm with the people near you for a few minutes.
 What are some examples of situations in which project management might be useful for you in your daily life?
 What are some situations in which it might not be necessary?
 
-::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Software Development Process
 
