@@ -35,79 +35,83 @@ They tend to incorporate other practices to improve software quality.
 We are uncovering better ways of developing software by doing it and helping others do it.
 Through this work we have come to value:
 
-- **Individuals and interactions** over processes and tools
-- **Working software** over comprehensive documentation
-- **Customer collaboration** over contract negotiation
-- **Responding to change** over following a plan
+| We value… | …over… |
+|-----------|--------|
+| **Individuals and interactions** | processes and tools |
+| **Working software** | comprehensive documentation |
+| **Customer collaboration** | contract negotiation |
+| **Responding to change** | following a plan |
 
-(Nearly) everything about Agile Development is based on one value:
-Identify and eliminate sources of **WASTE**.
+Note the phrasing: the items on the right still have value — the items on the left
+just have *more*. (Nearly) everything about Agile is based on one underlying value:
+identify and eliminate sources of **WASTE**.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Agile does not mean "no plan, no docs"
+
+A common misconception is that Agile means skipping planning and documentation.
+It doesn't. Agile teams plan constantly — just in shorter cycles — and they write
+the documentation that genuinely helps. The shift is *when* and *how much*, not
+*whether*.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ### Individuals and Interactions over Processes and Tools
 
-Good processes and tools are important, but it's more important to make
-sure that people are happy, productive, and communicating.
-If a process or tool isn't working for people, change it!
-Agile methods favor lightweight, widely accessible tools over fancy, expensive software packages.
-This can mean collaborative whiteboards in public areas and simple text formats
-like markdown and restructuredText for documents.
-Agile methods promote a pace for software development that can be
-sustained indefinitely and without heroics.
+- People come first: keep them happy, productive, and communicating. If a process
+  or tool isn't working for people, **change it**.
+- Favor lightweight, accessible tools over fancy, expensive packages.
+- Communicate status, issues, and lessons learned **regularly** — ideally face-to-face.
+- Protect people's time: meetings are **time-boxed** so developers can focus.
 
-Agile methods incorporate very regular communication of status, identification of
-issues, and retrospectives/postmortems on efforts.
-This is preferably in face-to-face interactions like daily interactions between
-software developers.
-Planning and retrospective discussions are usually held every 1-4 weeks.
+::::::::::::::::::::::::::::::::::::::::::  callout
 
-Agile methods also respect the time of individuals.
-Meetings are time-boxed so that software developers can focus on the problems they are solving.
-Daily status meetings are kept to 15 minutes and planning meetings are kept to 1
-hour per week of development effort.
+## What this looks like in practice
+
+- Shared whiteboards and simple text formats (Markdown, reStructuredText) over heavy tooling.
+- Daily status meetings kept to **15 minutes**.
+- Planning kept to about **1 hour per week** of development effort.
+- A pace that can be sustained indefinitely — **without heroics**.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Working Software over Comprehensive Documentation
 
-Requirements specifications and design documents have one main purpose:  to
-help get to useful, working software.
-Customers generally don't care about them once they have their software!
+The purpose of specs and design docs is to help get to useful, working software —
+customers generally don't care about them once they have what they need. So Agile
+teams keep **"just barely enough"** documentation: enough to develop, use, and
+maintain the project, and no more. Good docs capture the **"big picture"** and the
+**"why?"** — the things you *can't* easily figure out by reading the code.
 
-Agile methods generally maintain only documentation that allows the project to
-be developed, used, and maintained, and nothing more.
-A common agile approach is "just barely enough" documentation.
-The documentation should focus on what developers can't easily figure out looking
-at the code, i.e., the "big picture," and "why?" rather than "what?"
-Work should be completed "at the latest responsible moment."
-Guards should be implemented to prevent wasted work from changing requirements.
+::::::::::::::::::::::::::::::::::::::::::  callout
 
-Agile methods generally use lightweight representations for software requirements,
-UI designs, software architecture/design, etc.:
+## Lightweight representations
 
-- a whiteboard sketch of a UI workflow or domain model
-- a 3x5 card with a brief user story described on it
-- GitHub Issues to capture feature requests as well as bugs
+- A whiteboard sketch of a UI workflow or domain model
+- A 3x5 card with a brief user story on it
+- GitHub Issues to capture feature requests and bugs
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Customer Collaboration over Contract Negotiation
 
-If "contract negotiation" really means:  "Give me a specification of what you
-want, then leave me alone so I can go get it done," there might be a problem.
-This can occur between team members, as well as between a team and its client,
-and tends to make processes less flexible and adaptable to change.
-Agile expects requirements, or the understanding of requirements, to change!
-
-Agile methodology encourage constant collaboration within teams, and between
-developers and clients, to ensure that everyone's needs and goals are being met.
-Some agile approaches do limit opportunities for requirements to change in order
-to reduce what is called "requirements churn."
+"Contract negotiation" can quietly become: *"Give me a spec of what you want, then
+leave me alone to go build it."* That makes a project less flexible — and Agile
+**expects** requirements (or our understanding of them) to change. Instead, Agile
+encourages constant collaboration within the team and with clients so everyone's
+needs and goals stay aligned. Some approaches do deliberately limit *when*
+requirements can change, to reduce **"requirements churn."**
 
 ### Responding to Change over Following a Plan
 
-When requirements change, the current plan may no longer be the right plan.
-Agile methods adapt to change by reviewing and revising plans iteratively, over short time periods.
-Agile methods tend to only have detailed plans for the short- to medium-term.
-If (when) changes come, any effort spent on detailed long-term plans would have been wasted.
+When requirements change, the current plan may no longer be the right plan. Agile
+teams adapt by reviewing and revising plans **iteratively, over short time periods**,
+and only plan the short- to medium-term in detail. Any effort spent on detailed
+long-term plans is wasted as soon as things change — and they will.
 
 
 Now you know more about the theory around the Agile Methodology.

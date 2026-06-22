@@ -1,7 +1,7 @@
 ---
 title: "The Waterfall Model"
 teaching: 5
-exercises: 30
+exercises: 25
 
 ---
 
@@ -53,10 +53,10 @@ we will consider the phases to be:
 ![](fig/house.png){alt='A house icon - created by VectorMachines on Flaticon.'}
 
 0. Split into 4 groups and grab a set of LEGOs :tm:.
-1. (7 min) Gather requirements from your customer. 
+1. (6 min) Gather requirements from your customer.
    Ask important questions to help you determine what needs to be done to build their dream house!
-2. (5 min) Determine your design. How can you satisfy the requirements with your LEGOs?
-3. (12 min) Build the house!
+2. (4 min) Determine your design. How can you satisfy the requirements with your LEGOs?
+3. (10 min) Build the house!
 4. (3 min) Show it to your customer and see how you did.
 
 :::::::::: instructor
@@ -83,7 +83,7 @@ Instructions to give to the customers:
 > should then start asking you questions about the house: "How tall? How many
 > windows and doors?" (etc. etc.) They have 6 minutes to gather the requirements.
 > Then they aren't allowed to talk to you again while they build the house.
-> After 12 minutes of design and implementation, they show you their "completed"
+> After their design and implementation, they show you their "completed"
 > house. You provide feedback on what is wrong, what is right, etc.
 
 :::::::::::::::::::::
@@ -118,18 +118,21 @@ than to fix a requirement after implementation." - Boehm and Papaccio, 1988
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-The Waterfall model works well when:
+When does Waterfall shine, and when does it struggle?
 
-- Software requirements are very clear, well understood, and unchanging
-- Technical implementation details are also very well understood (generally 
-  considered more suited to manufacturing, but this is also changing with rapid prototyping!)
+| Works well when… | Works poorly when… |
+|------------------|--------------------|
+| Requirements are clear, well understood, and unchanging | Requirements are vague or likely to change |
+| Technical implementation is well understood | The technology or approach is new/uncertain |
+| The end goal is fixed and predictable | Discovery and learning are part of the work |
 
-Inversely, waterfall model works terribly when these things aren't present and
-can lead to greatly exceeding time and financial budgets.
-Waterfall-based models don't handle lack of knowledge, or change, very effectively.
-Poorly understood or changing software requirements, technology, or
-architecture choices can negatively impact the performance of the waterfall-model.
-Though, it should be noted that a lack of software-engineering discipline virtually negates all approaches.
+When the left-hand conditions aren't met, Waterfall can lead to greatly exceeding
+time and financial budgets — it doesn't handle lack of knowledge, or change, very
+effectively. (This is more suited to manufacturing, though even that is changing with
+rapid prototyping!)
+
+That said, a lack of software-engineering discipline virtually negates *all*
+approaches — no methodology rescues a project with no process at all.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 

@@ -58,11 +58,13 @@ contact: 'icosden@princeton.edu'
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
+episodes:
 - introduction.md
 - waterfall.md
 - agile.md
 - scrumban.md
+- choosing.md
+- genai.md
 
 # Information for Learners
 learners: 
