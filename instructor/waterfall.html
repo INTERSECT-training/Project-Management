@@ -100,7 +100,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><hr><li><a class="dropdown-item" href="reference.html"></a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><hr><li><a class="dropdown-item" href="reference.html">Glossary and References</a></li>
           </ul></li>
       </ul></div>
     <!--
@@ -119,11 +119,11 @@
   Project Management
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 10%" class="percentage">
-    10%
+<aside class="col-md-12 lesson-progress"><div style="width: 9%" class="percentage">
+    9%
   </div>
   <div class="progress intersect">
-    <div class="progress-bar intersect" role="progressbar" style="width: 10%" aria-valuenow="10" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar intersect" role="progressbar" style="width: 9%" aria-valuenow="9" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -252,6 +252,24 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="choosing.html">5. Choosing a Methodology</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="genai.html">6. GenAI in Project Management</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -274,7 +292,7 @@
                       <li>
                         <a href="../instructor/images.html">Extract All Images</a>
                       </li>
-                      <hr><li><a class="dropdown-item" href="reference.html"></a></li>
+                      <hr><li><a class="dropdown-item" href="reference.html">Glossary and References</a></li>
                     </ul></div>
                 </div>
               </div>
@@ -310,13 +328,13 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>The Waterfall Model</h1>
-        <p>Last updated on 2025-07-14 |
+        <p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Project-Management/edit/main/episodes/waterfall.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
-        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 35 minutes</p>
+        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
 
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -377,12 +395,12 @@ for our purposes, we will consider the phases to be:</p>
 <h3 class="callout-title">Let’s Build a House</h3>
 <div class="callout-content">
 <figure><img src="../fig/house.png" alt="A house icon - created by VectorMachines on Flaticon." class="figure mx-auto d-block"></figure><ol start="0" style="list-style-type: decimal"><li>Split into 4 groups and grab a set of LEGOs <span class="emoji" data-emoji="tm">™️</span>.</li>
-<li>(7 min) Gather requirements from your customer. Ask important
+<li>(6 min) Gather requirements from your customer. Ask important
 questions to help you determine what needs to be done to build their
 dream house!</li>
-<li>(5 min) Determine your design. How can you satisfy the requirements
+<li>(4 min) Determine your design. How can you satisfy the requirements
 with your LEGOs?</li>
-<li>(12 min) Build the house!</li>
+<li>(10 min) Build the house!</li>
 <li>(3 min) Show it to your customer and see how you did.</li>
 </ol></div>
 </div>
@@ -416,9 +434,9 @@ Start really basic / high level / vague like customers sometimes do. “I
 want you to build me a house.” The attendees should then start asking
 you questions about the house: “How tall? How many windows and doors?”
 (etc. etc.) They have 6 minutes to gather the requirements. Then they
-aren’t allowed to talk to you again while they build the house. After 12
-minutes of design and implementation, they show you their “completed”
-house. You provide feedback on what is wrong, what is right, etc.</p>
+aren’t allowed to talk to you again while they build the house. After
+their design and implementation, they show you their “completed” house.
+You provide feedback on what is wrong, what is right, etc.</p>
 </blockquote>
 </div>
 </div>
@@ -458,20 +476,22 @@ Papaccio, 1988</p>
 </div>
 </div>
 </div>
-<p>The Waterfall model works well when:</p>
-<ul><li>Software requirements are very clear, well understood, and
-unchanging</li>
-<li>Technical implementation details are also very well understood
-(generally considered more suited to manufacturing, but this is also
-changing with rapid prototyping!)</li>
-</ul><p>Inversely, waterfall model works terribly when these things aren’t
-present and can lead to greatly exceeding time and financial budgets.
-Waterfall-based models don’t handle lack of knowledge, or change, very
-effectively. Poorly understood or changing software requirements,
-technology, or architecture choices can negatively impact the
-performance of the waterfall-model. Though, it should be noted that a
-lack of software-engineering discipline virtually negates all
-approaches.</p>
+<p>When does Waterfall shine, and when does it struggle?</p>
+<table class="table"><colgroup><col width="47%"><col width="52%"></colgroup><thead><tr><th>Works well when…</th>
+<th>Works poorly when…</th>
+</tr></thead><tbody><tr><td>Requirements are clear, well understood, and unchanging</td>
+<td>Requirements are vague or likely to change</td>
+</tr><tr><td>Technical implementation is well understood</td>
+<td>The technology or approach is new/uncertain</td>
+</tr><tr><td>The end goal is fixed and predictable</td>
+<td>Discovery and learning are part of the work</td>
+</tr></tbody></table><p>When the left-hand conditions aren’t met, Waterfall can lead to
+greatly exceeding time and financial budgets — it doesn’t handle lack of
+knowledge, or change, very effectively. (This is more suited to
+manufacturing, though even that is changing with rapid prototyping!)</p>
+<p>That said, a lack of software-engineering discipline virtually
+negates <em>all</em> approaches — no methodology rescues a project with
+no process at all.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -548,8 +568,8 @@ are unclear or change frequently.</li>
   "url": "https://INTERSECT-training.github.io/Project-Management/instructor/waterfall.html",
   "identifier": "https://INTERSECT-training.github.io/Project-Management/instructor/waterfall.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2025-07-14",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>

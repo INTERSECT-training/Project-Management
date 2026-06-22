@@ -100,7 +100,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="reference.html"></a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="reference.html">Glossary and References</a></li>
           </ul></li>
       </ul></div>
     <!--
@@ -119,11 +119,11 @@
   Project Management
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 45%" class="percentage">
-    45%
+<aside class="col-md-12 lesson-progress"><div style="width: 36%" class="percentage">
+    36%
   </div>
   <div class="progress intersect">
-    <div class="progress-bar intersect" role="progressbar" style="width: 45%" aria-valuenow="45" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar intersect" role="progressbar" style="width: 36%" aria-valuenow="36" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -251,6 +251,24 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="choosing.html">5. Choosing a Methodology</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="genai.html">6. GenAI in Project Management</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -273,7 +291,7 @@
                       <li>
                         <a href="profiles.html">Learner Profiles</a>
                       </li>
-                      <li><a href="reference.html"></a></li>
+                      <li><a href="reference.html">Glossary and References</a></li>
                     </ul></div>
                 </div>
               </div>
@@ -309,7 +327,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>The Agile Methodology</h1>
-        <p>Last updated on 2025-07-14 |
+        <p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Project-Management/edit/main/episodes/agile.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -362,82 +380,110 @@ practices to improve software quality.</p>
 <div class="callout-content">
 <p>We are uncovering better ways of developing software by doing it and
 helping others do it. Through this work we have come to value:</p>
-<ul><li>
-<strong>Individuals and interactions</strong> over processes and
-tools</li>
-<li>
-<strong>Working software</strong> over comprehensive
-documentation</li>
-<li>
-<strong>Customer collaboration</strong> over contract
-negotiation</li>
-<li>
-<strong>Responding to change</strong> over following a plan</li>
-</ul><p>(Nearly) everything about Agile Development is based on one value:
-Identify and eliminate sources of <strong>WASTE</strong>.</p>
+<table class="table"><thead><tr><th>We value…</th>
+<th>…over…</th>
+</tr></thead><tbody><tr><td><strong>Individuals and interactions</strong></td>
+<td>processes and tools</td>
+</tr><tr><td><strong>Working software</strong></td>
+<td>comprehensive documentation</td>
+</tr><tr><td><strong>Customer collaboration</strong></td>
+<td>contract negotiation</td>
+</tr><tr><td><strong>Responding to change</strong></td>
+<td>following a plan</td>
+</tr></tbody></table><p>Note the phrasing: the items on the right still have value — the
+items on the left just have <em>more</em>. (Nearly) everything about
+Agile is based on one underlying value: identify and eliminate sources
+of <strong>WASTE</strong>.</p>
+</div>
+</div>
+</div>
+<div id="agile-does-not-mean-no-plan-no-docs" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="agile-does-not-mean-no-plan-no-docs" class="callout-inner">
+<h3 class="callout-title">Agile does not mean “no plan, no docs”</h3>
+<div class="callout-content">
+<p>A common misconception is that Agile means skipping planning and
+documentation. It doesn’t. Agile teams plan constantly — just in shorter
+cycles — and they write the documentation that genuinely helps. The
+shift is <em>when</em> and <em>how much</em>, not <em>whether</em>.</p>
 </div>
 </div>
 </div>
 <div class="section level3">
 <h3 id="individuals-and-interactions-over-processes-and-tools">Individuals and Interactions over Processes and Tools<a class="anchor" aria-label="anchor" href="#individuals-and-interactions-over-processes-and-tools"></a></h3>
-<p>Good processes and tools are important, but it’s more important to
-make sure that people are happy, productive, and communicating. If a
-process or tool isn’t working for people, change it! Agile methods favor
-lightweight, widely accessible tools over fancy, expensive software
-packages. This can mean collaborative whiteboards in public areas and
-simple text formats like markdown and restructuredText for documents.
-Agile methods promote a pace for software development that can be
-sustained indefinitely and without heroics.</p>
-<p>Agile methods incorporate very regular communication of status,
-identification of issues, and retrospectives/postmortems on efforts.
-This is preferably in face-to-face interactions like daily interactions
-between software developers. Planning and retrospective discussions are
-usually held every 1-4 weeks.</p>
-<p>Agile methods also respect the time of individuals. Meetings are
-time-boxed so that software developers can focus on the problems they
-are solving. Daily status meetings are kept to 15 minutes and planning
-meetings are kept to 1 hour per week of development effort.</p>
+<ul><li>People come first: keep them happy, productive, and communicating.
+If a process or tool isn’t working for people, <strong>change
+it</strong>.</li>
+<li>Favor lightweight, accessible tools over fancy, expensive
+packages.</li>
+<li>Communicate status, issues, and lessons learned
+<strong>regularly</strong> — ideally face-to-face.</li>
+<li>Protect people’s time: meetings are <strong>time-boxed</strong> so
+developers can focus.</li>
+</ul><div id="what-this-looks-like-in-practice" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="what-this-looks-like-in-practice" class="callout-inner">
+<h3 class="callout-title">What this looks like in practice</h3>
+<div class="callout-content">
+<ul><li>Shared whiteboards and simple text formats (Markdown,
+reStructuredText) over heavy tooling.</li>
+<li>Daily status meetings kept to <strong>15 minutes</strong>.</li>
+<li>Planning kept to about <strong>1 hour per week</strong> of
+development effort.</li>
+<li>A pace that can be sustained indefinitely — <strong>without
+heroics</strong>.</li>
+</ul></div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="working-software-over-comprehensive-documentation">Working Software over Comprehensive Documentation<a class="anchor" aria-label="anchor" href="#working-software-over-comprehensive-documentation"></a></h3>
-<p>Requirements specifications and design documents have one main
-purpose: to help get to useful, working software. Customers generally
-don’t care about them once they have their software!</p>
-<p>Agile methods generally maintain only documentation that allows the
-project to be developed, used, and maintained, and nothing more. A
-common agile approach is “just barely enough” documentation. The
-documentation should focus on what developers can’t easily figure out
-looking at the code, i.e., the “big picture,” and “why?” rather than
-“what?” Work should be completed “at the latest responsible moment.”
-Guards should be implemented to prevent wasted work from changing
-requirements.</p>
-<p>Agile methods generally use lightweight representations for software
-requirements, UI designs, software architecture/design, etc.:</p>
-<ul><li>a whiteboard sketch of a UI workflow or domain model</li>
-<li>a 3x5 card with a brief user story described on it</li>
-<li>GitHub Issues to capture feature requests as well as bugs</li>
+<p>The purpose of specs and design docs is to help get to useful,
+working software — customers generally don’t care about them once they
+have what they need. So Agile teams keep <strong>“just barely
+enough”</strong> documentation: enough to develop, use, and maintain the
+project, and no more. Good docs capture the <strong>“big
+picture”</strong> and the <strong>“why?”</strong> — the things you
+<em>can’t</em> easily figure out by reading the code.</p>
+<div id="lightweight-representations" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="lightweight-representations" class="callout-inner">
+<h3 class="callout-title">Lightweight representations</h3>
+<div class="callout-content">
+<ul><li>A whiteboard sketch of a UI workflow or domain model</li>
+<li>A 3x5 card with a brief user story on it</li>
+<li>GitHub Issues to capture feature requests and bugs</li>
 </ul></div>
+</div>
+</div>
+</div>
 <div class="section level3">
 <h3 id="customer-collaboration-over-contract-negotiation">Customer Collaboration over Contract Negotiation<a class="anchor" aria-label="anchor" href="#customer-collaboration-over-contract-negotiation"></a></h3>
-<p>If “contract negotiation” really means: “Give me a specification of
-what you want, then leave me alone so I can go get it done,” there might
-be a problem. This can occur between team members, as well as between a
-team and its client, and tends to make processes less flexible and
-adaptable to change. Agile expects requirements, or the understanding of
-requirements, to change!</p>
-<p>Agile methodology encourage constant collaboration within teams, and
-between developers and clients, to ensure that everyone’s needs and
-goals are being met. Some agile approaches do limit opportunities for
-requirements to change in order to reduce what is called “requirements
-churn.”</p>
+<p>“Contract negotiation” can quietly become: <em>“Give me a spec of
+what you want, then leave me alone to go build it.”</em> That makes a
+project less flexible — and Agile <strong>expects</strong> requirements
+(or our understanding of them) to change. Instead, Agile encourages
+constant collaboration within the team and with clients so everyone’s
+needs and goals stay aligned. Some approaches do deliberately limit
+<em>when</em> requirements can change, to reduce <strong>“requirements
+churn.”</strong></p>
 </div>
 <div class="section level3">
 <h3 id="responding-to-change-over-following-a-plan">Responding to Change over Following a Plan<a class="anchor" aria-label="anchor" href="#responding-to-change-over-following-a-plan"></a></h3>
 <p>When requirements change, the current plan may no longer be the right
-plan. Agile methods adapt to change by reviewing and revising plans
-iteratively, over short time periods. Agile methods tend to only have
-detailed plans for the short- to medium-term. If (when) changes come,
-any effort spent on detailed long-term plans would have been wasted.</p>
+plan. Agile teams adapt by reviewing and revising plans
+<strong>iteratively, over short time periods</strong>, and only plan the
+short- to medium-term in detail. Any effort spent on detailed long-term
+plans is wasted as soon as things change — and they will.</p>
 <p>Now you know more about the theory around the Agile Methodology. In
 the next section, we will cover certain Agile development
 implementations.</p>
@@ -516,8 +562,8 @@ working software, customer collaboration, and responding to change.</li>
   "url": "https://INTERSECT-training.github.io/Project-Management/agile.html",
   "identifier": "https://INTERSECT-training.github.io/Project-Management/agile.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2025-07-14",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>

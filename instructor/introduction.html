@@ -100,7 +100,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><hr><li><a class="dropdown-item" href="reference.html"></a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><hr><li><a class="dropdown-item" href="reference.html">Glossary and References</a></li>
           </ul></li>
       </ul></div>
     <!--
@@ -253,6 +253,24 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="choosing.html">5. Choosing a Methodology</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="genai.html">6. GenAI in Project Management</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -275,7 +293,7 @@
                       <li>
                         <a href="../instructor/images.html">Extract All Images</a>
                       </li>
-                      <hr><li><a class="dropdown-item" href="reference.html"></a></li>
+                      <hr><li><a class="dropdown-item" href="reference.html">Glossary and References</a></li>
                     </ul></div>
                 </div>
               </div>
@@ -311,7 +329,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Introduction</h1>
-        <p>Last updated on 2024-07-12 |
+        <p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Project-Management/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -371,6 +389,24 @@ you (and “future you”) will probably benefit from project management. If
 you are experimenting with something for just one week, you probably
 don’t need project management.</p>
 <p><em>But are you sure it’s really just “one week”?</em></p>
+<div id="project-management-for-research-software" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="project-management-for-research-software" class="callout-inner">
+<h3 class="callout-title">Project management for research software</h3>
+<div class="callout-content">
+<p>Research software has its own flavor of these questions. The
+“customer” might be your PI, your grant’s aims, a collaborating lab, or
+simply <strong>“future you”</strong> trying to reproduce a result.
+“Release” might mean tagging a version for a paper, and “maintenance”
+might mean keeping code runnable long after the student who wrote it has
+graduated. Even a one-person project benefits from a little structure
+once it needs to outlive a single deadline.</p>
+</div>
+</div>
+</div>
 <div id="when-do-you-need-it" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -389,14 +425,39 @@ be necessary?</p>
 </section><section><h2 class="section-heading" id="software-development-process">Software Development Process<a class="anchor" aria-label="anchor" href="#software-development-process"></a></h2>
 <hr class="half-width"><p>Below are (most) of the different phases of the software development
 process.</p>
-<ol style="list-style-type: decimal"><li>Determine software requirements</li>
-<li>Software design</li>
-<li>Implementation</li>
-<li>Software testing</li>
-<li>Software documentation</li>
-<li>Release/deploy the software to the customer</li>
-<li>Ongoing maintenance</li>
-</ol><p>These phases can be mixed or (sometimes) reordered. This can happen
+<table class="table"><colgroup><col width="7%"><col width="17%"><col width="35%"><col width="40%"></colgroup><thead><tr><th>#</th>
+<th>Phase</th>
+<th>What happens</th>
+<th>Typical output</th>
+</tr></thead><tbody><tr><td>1</td>
+<td>Requirements</td>
+<td>Figure out what the software needs to do</td>
+<td>A list of needs / user stories</td>
+</tr><tr><td>2</td>
+<td>Design</td>
+<td>Decide how it will be built</td>
+<td>Architecture, interfaces, plans</td>
+</tr><tr><td>3</td>
+<td>Implementation</td>
+<td>Write the code</td>
+<td>Working code</td>
+</tr><tr><td>4</td>
+<td>Testing</td>
+<td>Confirm it does what it should</td>
+<td>Tests, bug reports</td>
+</tr><tr><td>5</td>
+<td>Documentation</td>
+<td>Explain how to use and maintain it</td>
+<td>User and developer docs</td>
+</tr><tr><td>6</td>
+<td>Release / Deploy</td>
+<td>Get it to the people who use it</td>
+<td>A usable version</td>
+</tr><tr><td>7</td>
+<td>Maintenance</td>
+<td>Keep it working and fix issues over time</td>
+<td>Patches, updates</td>
+</tr></tbody></table><p>These phases can be mixed or (sometimes) reordered. This can happen
 for a variety of reasons. The line between requirements and design are
 often blurry. Implementation, testing, and user docs often proceed
 concurrently. Sometimes, tests are written first in what is called Test
@@ -404,10 +465,23 @@ Driven Development (TDD). Another thing to note is that the definition
 of roles vary. For example, the “customer” or “user” may also be the
 author of the software, or may be quite removed.</p>
 <p>There are many different methodologies to help organize the software
-development process. In the following sections, we will discuss some of
-the more popular methodologies such as the Waterfall model and Agile
-software development.</p>
-<div id="keypoints1" class="callout keypoints">
+development process. In the rest of this lesson we will work through
+them in order:</p>
+<ol style="list-style-type: decimal"><li>
+<strong>The Waterfall model</strong> — phases done sequentially</li>
+<li>
+<strong>The Agile methodology</strong> — iterative and responsive to
+change</li>
+<li>
+<strong>Agile frameworks</strong> — Scrum, Kanban, and MoSCoW in
+practice</li>
+<li>
+<strong>Choosing a methodology</strong> — how to decide which fits
+your project</li>
+<li>
+<strong>GenAI in project management</strong> — where LLMs help, and
+where they don’t</li>
+</ol><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -483,8 +557,8 @@ maintenance.</li>
   "url": "https://INTERSECT-training.github.io/Project-Management/instructor/introduction.html",
   "identifier": "https://INTERSECT-training.github.io/Project-Management/instructor/introduction.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2024-07-12",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>

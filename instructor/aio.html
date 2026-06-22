@@ -124,7 +124,7 @@
           </button>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 <hr>
-<li><a class="dropdown-item" href="reference.html"></a></li>
+<li><a class="dropdown-item" href="reference.html">Glossary and References</a></li>
           </ul>
 </li>
       </ul>
@@ -290,6 +290,30 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="choosing.html">5. Choosing a Methodology</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="genai.html">6. GenAI in Project Management</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -315,7 +339,7 @@
                         <a href="../instructor/images.html">Extract All Images</a>
                       </li>
                       <hr>
-<li><a class="dropdown-item" href="reference.html"></a></li>
+<li><a class="dropdown-item" href="reference.html">Glossary and References</a></li>
                     </ul>
 </div>
                 </div>
@@ -347,7 +371,7 @@
         
 <section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2024-07-12 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Project-Management/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -408,6 +432,24 @@ you (and “future you”) will probably benefit from project management. If
 you are experimenting with something for just one week, you probably
 don’t need project management.</p>
 <p><em>But are you sure it’s really just “one week”?</em></p>
+<div id="project-management-for-research-software" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="project-management-for-research-software" class="callout-inner">
+<h3 class="callout-title">Project management for research software</h3>
+<div class="callout-content">
+<p>Research software has its own flavor of these questions. The
+“customer” might be your PI, your grant’s aims, a collaborating lab, or
+simply <strong>“future you”</strong> trying to reproduce a result.
+“Release” might mean tagging a version for a paper, and “maintenance”
+might mean keeping code runnable long after the student who wrote it has
+graduated. Even a one-person project benefits from a little structure
+once it needs to outlive a single deadline.</p>
+</div>
+</div>
+</div>
 <div id="when-do-you-need-it" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -428,15 +470,64 @@ be necessary?</p>
 <hr class="half-width">
 <p>Below are (most) of the different phases of the software development
 process.</p>
-<ol style="list-style-type: decimal">
-<li>Determine software requirements</li>
-<li>Software design</li>
-<li>Implementation</li>
-<li>Software testing</li>
-<li>Software documentation</li>
-<li>Release/deploy the software to the customer</li>
-<li>Ongoing maintenance</li>
-</ol>
+<table class="table">
+<colgroup>
+<col width="7%">
+<col width="17%">
+<col width="35%">
+<col width="40%">
+</colgroup>
+<thead><tr>
+<th>#</th>
+<th>Phase</th>
+<th>What happens</th>
+<th>Typical output</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Requirements</td>
+<td>Figure out what the software needs to do</td>
+<td>A list of needs / user stories</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Design</td>
+<td>Decide how it will be built</td>
+<td>Architecture, interfaces, plans</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Implementation</td>
+<td>Write the code</td>
+<td>Working code</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Testing</td>
+<td>Confirm it does what it should</td>
+<td>Tests, bug reports</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Documentation</td>
+<td>Explain how to use and maintain it</td>
+<td>User and developer docs</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Release / Deploy</td>
+<td>Get it to the people who use it</td>
+<td>A usable version</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Maintenance</td>
+<td>Keep it working and fix issues over time</td>
+<td>Patches, updates</td>
+</tr>
+</tbody>
+</table>
 <p>These phases can be mixed or (sometimes) reordered. This can happen
 for a variety of reasons. The line between requirements and design are
 often blurry. Implementation, testing, and user docs often proceed
@@ -445,9 +536,24 @@ Driven Development (TDD). Another thing to note is that the definition
 of roles vary. For example, the “customer” or “user” may also be the
 author of the software, or may be quite removed.</p>
 <p>There are many different methodologies to help organize the software
-development process. In the following sections, we will discuss some of
-the more popular methodologies such as the Waterfall model and Agile
-software development.</p>
+development process. In the rest of this lesson we will work through
+them in order:</p>
+<ol style="list-style-type: decimal">
+<li>
+<strong>The Waterfall model</strong> — phases done sequentially</li>
+<li>
+<strong>The Agile methodology</strong> — iterative and responsive to
+change</li>
+<li>
+<strong>Agile frameworks</strong> — Scrum, Kanban, and MoSCoW in
+practice</li>
+<li>
+<strong>Choosing a methodology</strong> — how to decide which fits
+your project</li>
+<li>
+<strong>GenAI in project management</strong> — where LLMs help, and
+where they don’t</li>
+</ol>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -468,10 +574,10 @@ maintenance.</li>
 </div>
 </section></section><section id="aio-waterfall"><p>Content from <a href="waterfall.html">The Waterfall Model</a></p>
 <hr>
-<p>Last updated on 2025-07-14 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Project-Management/edit/main/episodes/waterfall.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 35 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -537,12 +643,12 @@ for our purposes, we will consider the phases to be:</p>
 <div class="callout-content">
 <figure><img src="../fig/house.png" alt="A house icon - created by VectorMachines on Flaticon." class="figure mx-auto d-block"></figure><ol start="0" style="list-style-type: decimal">
 <li>Split into 4 groups and grab a set of LEGOs <span class="emoji" data-emoji="tm">™️</span>.</li>
-<li>(7 min) Gather requirements from your customer. Ask important
+<li>(6 min) Gather requirements from your customer. Ask important
 questions to help you determine what needs to be done to build their
 dream house!</li>
-<li>(5 min) Determine your design. How can you satisfy the requirements
+<li>(4 min) Determine your design. How can you satisfy the requirements
 with your LEGOs?</li>
-<li>(12 min) Build the house!</li>
+<li>(10 min) Build the house!</li>
 <li>(3 min) Show it to your customer and see how you did.</li>
 </ol>
 </div>
@@ -579,9 +685,9 @@ Start really basic / high level / vague like customers sometimes do. “I
 want you to build me a house.” The attendees should then start asking
 you questions about the house: “How tall? How many windows and doors?”
 (etc. etc.) They have 6 minutes to gather the requirements. Then they
-aren’t allowed to talk to you again while they build the house. After 12
-minutes of design and implementation, they show you their “completed”
-house. You provide feedback on what is wrong, what is right, etc.</p>
+aren’t allowed to talk to you again while they build the house. After
+their design and implementation, they show you their “completed” house.
+You provide feedback on what is wrong, what is right, etc.</p>
 </blockquote>
 </div>
 </div>
@@ -623,22 +729,38 @@ Papaccio, 1988</p>
 </div>
 </div>
 </div>
-<p>The Waterfall model works well when:</p>
-<ul>
-<li>Software requirements are very clear, well understood, and
-unchanging</li>
-<li>Technical implementation details are also very well understood
-(generally considered more suited to manufacturing, but this is also
-changing with rapid prototyping!)</li>
-</ul>
-<p>Inversely, waterfall model works terribly when these things aren’t
-present and can lead to greatly exceeding time and financial budgets.
-Waterfall-based models don’t handle lack of knowledge, or change, very
-effectively. Poorly understood or changing software requirements,
-technology, or architecture choices can negatively impact the
-performance of the waterfall-model. Though, it should be noted that a
-lack of software-engineering discipline virtually negates all
-approaches.</p>
+<p>When does Waterfall shine, and when does it struggle?</p>
+<table class="table">
+<colgroup>
+<col width="47%">
+<col width="52%">
+</colgroup>
+<thead><tr>
+<th>Works well when…</th>
+<th>Works poorly when…</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Requirements are clear, well understood, and unchanging</td>
+<td>Requirements are vague or likely to change</td>
+</tr>
+<tr>
+<td>Technical implementation is well understood</td>
+<td>The technology or approach is new/uncertain</td>
+</tr>
+<tr>
+<td>The end goal is fixed and predictable</td>
+<td>Discovery and learning are part of the work</td>
+</tr>
+</tbody>
+</table>
+<p>When the left-hand conditions aren’t met, Waterfall can lead to
+greatly exceeding time and financial budgets — it doesn’t handle lack of
+knowledge, or change, very effectively. (This is more suited to
+manufacturing, though even that is changing with rapid prototyping!)</p>
+<p>That said, a lack of software-engineering discipline virtually
+negates <em>all</em> approaches — no methodology rescues a project with
+no process at all.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -659,7 +781,7 @@ are unclear or change frequently.</li>
 </div>
 </section></section><section id="aio-agile"><p>Content from <a href="agile.html">The Agile Methodology</a></p>
 <hr>
-<p>Last updated on 2025-07-14 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Project-Management/edit/main/episodes/agile.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 5 minutes</p>
@@ -713,90 +835,134 @@ practices to improve software quality.</p>
 <div class="callout-content">
 <p>We are uncovering better ways of developing software by doing it and
 helping others do it. Through this work we have come to value:</p>
-<ul>
-<li>
-<strong>Individuals and interactions</strong> over processes and
-tools</li>
-<li>
-<strong>Working software</strong> over comprehensive
-documentation</li>
-<li>
-<strong>Customer collaboration</strong> over contract
-negotiation</li>
-<li>
-<strong>Responding to change</strong> over following a plan</li>
-</ul>
-<p>(Nearly) everything about Agile Development is based on one value:
-Identify and eliminate sources of <strong>WASTE</strong>.</p>
+<table class="table">
+<thead><tr>
+<th>We value…</th>
+<th>…over…</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Individuals and interactions</strong></td>
+<td>processes and tools</td>
+</tr>
+<tr>
+<td><strong>Working software</strong></td>
+<td>comprehensive documentation</td>
+</tr>
+<tr>
+<td><strong>Customer collaboration</strong></td>
+<td>contract negotiation</td>
+</tr>
+<tr>
+<td><strong>Responding to change</strong></td>
+<td>following a plan</td>
+</tr>
+</tbody>
+</table>
+<p>Note the phrasing: the items on the right still have value — the
+items on the left just have <em>more</em>. (Nearly) everything about
+Agile is based on one underlying value: identify and eliminate sources
+of <strong>WASTE</strong>.</p>
+</div>
+</div>
+</div>
+<div id="agile-does-not-mean-no-plan-no-docs" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="agile-does-not-mean-no-plan-no-docs" class="callout-inner">
+<h3 class="callout-title">Agile does not mean “no plan, no docs”</h3>
+<div class="callout-content">
+<p>A common misconception is that Agile means skipping planning and
+documentation. It doesn’t. Agile teams plan constantly — just in shorter
+cycles — and they write the documentation that genuinely helps. The
+shift is <em>when</em> and <em>how much</em>, not <em>whether</em>.</p>
 </div>
 </div>
 </div>
 <div class="section level3">
 <h3 id="individuals-and-interactions-over-processes-and-tools">Individuals and Interactions over Processes and Tools<a class="anchor" aria-label="anchor" href="#individuals-and-interactions-over-processes-and-tools"></a>
 </h3>
-<p>Good processes and tools are important, but it’s more important to
-make sure that people are happy, productive, and communicating. If a
-process or tool isn’t working for people, change it! Agile methods favor
-lightweight, widely accessible tools over fancy, expensive software
-packages. This can mean collaborative whiteboards in public areas and
-simple text formats like markdown and restructuredText for documents.
-Agile methods promote a pace for software development that can be
-sustained indefinitely and without heroics.</p>
-<p>Agile methods incorporate very regular communication of status,
-identification of issues, and retrospectives/postmortems on efforts.
-This is preferably in face-to-face interactions like daily interactions
-between software developers. Planning and retrospective discussions are
-usually held every 1-4 weeks.</p>
-<p>Agile methods also respect the time of individuals. Meetings are
-time-boxed so that software developers can focus on the problems they
-are solving. Daily status meetings are kept to 15 minutes and planning
-meetings are kept to 1 hour per week of development effort.</p>
+<ul>
+<li>People come first: keep them happy, productive, and communicating.
+If a process or tool isn’t working for people, <strong>change
+it</strong>.</li>
+<li>Favor lightweight, accessible tools over fancy, expensive
+packages.</li>
+<li>Communicate status, issues, and lessons learned
+<strong>regularly</strong> — ideally face-to-face.</li>
+<li>Protect people’s time: meetings are <strong>time-boxed</strong> so
+developers can focus.</li>
+</ul>
+<div id="what-this-looks-like-in-practice" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="what-this-looks-like-in-practice" class="callout-inner">
+<h3 class="callout-title">What this looks like in practice</h3>
+<div class="callout-content">
+<ul>
+<li>Shared whiteboards and simple text formats (Markdown,
+reStructuredText) over heavy tooling.</li>
+<li>Daily status meetings kept to <strong>15 minutes</strong>.</li>
+<li>Planning kept to about <strong>1 hour per week</strong> of
+development effort.</li>
+<li>A pace that can be sustained indefinitely — <strong>without
+heroics</strong>.</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="working-software-over-comprehensive-documentation">Working Software over Comprehensive Documentation<a class="anchor" aria-label="anchor" href="#working-software-over-comprehensive-documentation"></a>
 </h3>
-<p>Requirements specifications and design documents have one main
-purpose: to help get to useful, working software. Customers generally
-don’t care about them once they have their software!</p>
-<p>Agile methods generally maintain only documentation that allows the
-project to be developed, used, and maintained, and nothing more. A
-common agile approach is “just barely enough” documentation. The
-documentation should focus on what developers can’t easily figure out
-looking at the code, i.e., the “big picture,” and “why?” rather than
-“what?” Work should be completed “at the latest responsible moment.”
-Guards should be implemented to prevent wasted work from changing
-requirements.</p>
-<p>Agile methods generally use lightweight representations for software
-requirements, UI designs, software architecture/design, etc.:</p>
+<p>The purpose of specs and design docs is to help get to useful,
+working software — customers generally don’t care about them once they
+have what they need. So Agile teams keep <strong>“just barely
+enough”</strong> documentation: enough to develop, use, and maintain the
+project, and no more. Good docs capture the <strong>“big
+picture”</strong> and the <strong>“why?”</strong> — the things you
+<em>can’t</em> easily figure out by reading the code.</p>
+<div id="lightweight-representations" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="lightweight-representations" class="callout-inner">
+<h3 class="callout-title">Lightweight representations</h3>
+<div class="callout-content">
 <ul>
-<li>a whiteboard sketch of a UI workflow or domain model</li>
-<li>a 3x5 card with a brief user story described on it</li>
-<li>GitHub Issues to capture feature requests as well as bugs</li>
+<li>A whiteboard sketch of a UI workflow or domain model</li>
+<li>A 3x5 card with a brief user story on it</li>
+<li>GitHub Issues to capture feature requests and bugs</li>
 </ul>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="customer-collaboration-over-contract-negotiation">Customer Collaboration over Contract Negotiation<a class="anchor" aria-label="anchor" href="#customer-collaboration-over-contract-negotiation"></a>
 </h3>
-<p>If “contract negotiation” really means: “Give me a specification of
-what you want, then leave me alone so I can go get it done,” there might
-be a problem. This can occur between team members, as well as between a
-team and its client, and tends to make processes less flexible and
-adaptable to change. Agile expects requirements, or the understanding of
-requirements, to change!</p>
-<p>Agile methodology encourage constant collaboration within teams, and
-between developers and clients, to ensure that everyone’s needs and
-goals are being met. Some agile approaches do limit opportunities for
-requirements to change in order to reduce what is called “requirements
-churn.”</p>
+<p>“Contract negotiation” can quietly become: <em>“Give me a spec of
+what you want, then leave me alone to go build it.”</em> That makes a
+project less flexible — and Agile <strong>expects</strong> requirements
+(or our understanding of them) to change. Instead, Agile encourages
+constant collaboration within the team and with clients so everyone’s
+needs and goals stay aligned. Some approaches do deliberately limit
+<em>when</em> requirements can change, to reduce <strong>“requirements
+churn.”</strong></p>
 </div>
 <div class="section level3">
 <h3 id="responding-to-change-over-following-a-plan">Responding to Change over Following a Plan<a class="anchor" aria-label="anchor" href="#responding-to-change-over-following-a-plan"></a>
 </h3>
 <p>When requirements change, the current plan may no longer be the right
-plan. Agile methods adapt to change by reviewing and revising plans
-iteratively, over short time periods. Agile methods tend to only have
-detailed plans for the short- to medium-term. If (when) changes come,
-any effort spent on detailed long-term plans would have been wasted.</p>
+plan. Agile teams adapt by reviewing and revising plans
+<strong>iteratively, over short time periods</strong>, and only plan the
+short- to medium-term in detail. Any effort spent on detailed long-term
+plans is wasted as soon as things change — and they will.</p>
 <p>Now you know more about the theory around the Agile Methodology. In
 the next section, we will cover certain Agile development
 implementations.</p>
@@ -819,10 +985,10 @@ working software, customer collaboration, and responding to change.</li>
 </div>
 </section></section><section id="aio-scrumban"><p>Content from <a href="scrumban.html">Agile Development</a></p>
 <hr>
-<p>Last updated on 2025-07-14 |
+<p>Last updated on 2026-06-22 |
 
         <a href="https://github.com/INTERSECT-training/Project-Management/edit/main/episodes/scrumban.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 50 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 55 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -859,7 +1025,54 @@ working software, customer collaboration, and responding to change.</li>
 <p><strong>Scrum</strong> (and its variants) is one of the most widely
 used Agile frameworks. Scrum is a lightweight process that aims to break
 work into time-boxed iterations.</p>
-<figure><img src="../fig/scrum-process.png" alt="The Scrum Process - an interative process that flows from Product goal to Sprint planning to development (in increments) to Sprint review, looping back" class="figure mx-auto d-block"></figure><div class="section level3">
+<figure><img src="../fig/scrum-process.png" alt="The Scrum Process - an interative process that flows from Product goal to Sprint planning to development (in increments) to Sprint review, looping back" class="figure mx-auto d-block"></figure><div id="whos-who-in-scrum" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="whos-who-in-scrum" class="callout-inner">
+<h3 class="callout-title">Who’s who in Scrum</h3>
+<div class="callout-content">
+<p>Scrum defines three roles. It helps to map them to today’s
+exercise:</p>
+<table class="table">
+<colgroup>
+<col width="15%">
+<col width="41%">
+<col width="43%">
+</colgroup>
+<thead><tr>
+<th>Role</th>
+<th>Responsibility</th>
+<th>In our exercise</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Product Owner</strong></td>
+<td>Owns the vision and prioritizes the backlog; represents the
+customer</td>
+<td>The “customer”</td>
+</tr>
+<tr>
+<td><strong>Scrum Master</strong></td>
+<td>Keeps the process running, removes blockers, protects the team</td>
+<td>A designated member of your group</td>
+</tr>
+<tr>
+<td><strong>Development Team</strong></td>
+<td>Builds the product; estimates and commits to the work</td>
+<td>Your group</td>
+</tr>
+</tbody>
+</table>
+<p>In research software these roles often blur — a PI might be the
+Product Owner, and a single developer may wear all three hats. The
+<em>responsibilities</em> still need an owner, even if the titles
+don’t.</p>
+</div>
+</div>
+</div>
+<div class="section level3">
 <h3 id="project-vision">Project Vision<a class="anchor" aria-label="anchor" href="#project-vision"></a>
 </h3>
 <p>In the initial phase, project envisioning takes place. How long this
@@ -931,6 +1144,35 @@ determined by the client and the team, based on relevance to the product
 roadmap, risk/uncertainty, level of difficulty, etc. Implementation cost
 of the features is determined by the developers. The developers then
 commit to completing those tasks within the sprint.</p>
+<div id="estimating-the-work" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="estimating-the-work" class="callout-inner">
+<h3 class="callout-title">Estimating the work</h3>
+<div class="callout-content">
+<p>How do developers figure out “implementation cost”? Rather than
+guessing exact hours, Agile teams usually estimate <em>relative</em>
+effort:</p>
+<ul>
+<li>
+<strong>Story points</strong> — an abstract size (often Fibonacci:
+1, 2, 3, 5, 8…) capturing effort, complexity, and uncertainty
+together.</li>
+<li>
+<strong>Planning poker</strong> — everyone privately picks an
+estimate, then reveals simultaneously; big disagreements spark a useful
+discussion before re-voting.</li>
+<li>
+<strong>T-shirt sizes</strong> — quick, coarse sizing (S / M / L /
+XL) when points feel like overkill.</li>
+</ul>
+<p>The goal is to create a shared understanding of how much fits in a
+sprint.</p>
+</div>
+</div>
+</div>
 <div id="defining-the-work" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -959,6 +1201,21 @@ requirement was later found to be unnecessary).</p>
 period. They meet for daily stand-up meetings (generally 15 minutes) in
 which they discuss what they did yesterday, what they plan to do today,
 and any blockers or issues that may have occurred.</p>
+<div id="definition-of-done" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="definition-of-done" class="callout-inner">
+<h3 class="callout-title">Definition of Done</h3>
+<div class="callout-content">
+<p>Teams agree up front on what <strong>“done”</strong> actually means —
+for example: code written, tests passing, reviewed, and documented. A
+shared <em>Definition of Done</em> keeps “done” from quietly meaning
+“works on my machine,” and makes sprint reviews honest.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="sprint-review">Sprint Review<a class="anchor" aria-label="anchor" href="#sprint-review"></a>
@@ -974,14 +1231,7 @@ future sprints. A sprint may include releasing/deploying software, or it
 may not. This depends on where the team is with respect to the product
 roadmap.</p>
 </div>
-</section><section><h2 class="section-heading" id="agile-vs--waterfall">Agile vs. Waterfall<a class="anchor" aria-label="anchor" href="#agile-vs--waterfall"></a>
-</h2>
-<hr class="half-width">
-<p>Agile does requirements gathering and design incrementally, mostly
-just before implementation. Overall, Agile may be more costly than a
-well-executed waterfall approach, as long as requirements and design
-don’t change!</p>
-<figure><img src="../fig/agilevswaterfall.png" alt="A graph of project lifetime vs. effort for agile and waterfall. Waterfall has large peaks in efforts at the beginning, followed by predictable iterations. Agile has smaller upfront cost but also has similar predictable iterations." class="figure mx-auto d-block"></figure></section><section><h2 class="section-heading" id="other-agile-methodologies">Other Agile Methodologies<a class="anchor" aria-label="anchor" href="#other-agile-methodologies"></a>
+</section><section><h2 class="section-heading" id="other-agile-methodologies">Other Agile Methodologies<a class="anchor" aria-label="anchor" href="#other-agile-methodologies"></a>
 </h2>
 <hr class="half-width">
 <div class="section level3">
@@ -989,33 +1239,110 @@ don’t change!</p>
 </h3>
 <p>Japanese for “Board,” Kanban is a lightweight method for tracking
 work on a project. While it was originally done using a board marked
-into four columns and Post-It notes, it integrates well with GitHub.
-Kanban is typically best for small to medium size projects.</p>
-<figure><img src="../fig/kanban.png" alt="Two team members addressing a Kanban board with four columns." class="figure mx-auto d-block"></figure>
+into columns and Post-It notes, it integrates well with GitHub. Kanban
+is typically best for small to medium size projects.</p>
+<figure><img src="../fig/kanban.png" alt="Two team members addressing a Kanban board with four columns." class="figure mx-auto d-block"></figure><p>Scrum and Kanban are both Agile, but they emphasize different
+things:</p>
+<table class="table">
+<colgroup>
+<col width="11%">
+<col width="42%">
+<col width="46%">
+</colgroup>
+<thead><tr>
+<th></th>
+<th><strong>Scrum</strong></th>
+<th><strong>Kanban</strong></th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Rhythm</td>
+<td>Fixed-length sprints</td>
+<td>Continuous flow</td>
+</tr>
+<tr>
+<td>Roles</td>
+<td>Defined (PO, Scrum Master, team)</td>
+<td>No required roles</td>
+</tr>
+<tr>
+<td>Change</td>
+<td>Wait for next sprint</td>
+<td>Add anytime</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Coordinating a team toward releases</td>
+<td>Steady streams of incoming work</td>
+</tr>
+</tbody>
+</table>
+<p>These aren’t mutually exclusive — combining them is exactly what
+<strong>Scrumban</strong> (the upcoming exercise) is about.</p>
 </div>
 <div class="section level3">
 <h3 id="moscow">MoSCoW<a class="anchor" aria-label="anchor" href="#moscow"></a>
 </h3>
-<p>MoSCoW is a lightweight technique for prioritizing work typically
-done in the sprint planning meeting. This meeting’s focus is on the next
-software release/sprint.</p>
-<p>MoSCoW stands for:</p>
-<ul>
-<li>
-<strong>Must have</strong>: Without this, we don’t have a useable
-release</li>
-<li>
-<strong>Should have</strong>: The release would be less valuable or
-compelling without this, but would still be worth releasing</li>
-<li>
-<strong>Could have</strong>: Nice to have, but not essential</li>
-<li>
-<strong>Won’t have</strong>: Maybe not ever, but too much for this
-time</li>
-</ul>
-<p>The priority of the sprint is to work first on <strong>Must
-Haves</strong> and then <strong>Should Haves</strong> (if there is time
-remaining in the sprint).</p>
+<p>MoSCoW is a lightweight technique for prioritizing work, typically
+done in the sprint planning meeting with a focus on the next
+release/sprint:</p>
+<table class="table">
+<thead><tr>
+<th>Category</th>
+<th>Meaning</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Must have</strong></td>
+<td>Without this, we don’t have a usable release</td>
+</tr>
+<tr>
+<td><strong>Should have</strong></td>
+<td>Important, but the release still works without it</td>
+</tr>
+<tr>
+<td><strong>Could have</strong></td>
+<td>Nice to have, not essential</td>
+</tr>
+<tr>
+<td><strong>Won’t have</strong></td>
+<td>Not this time (maybe never)</td>
+</tr>
+</tbody>
+</table>
+<p>Work first on <strong>Must haves</strong>, then <strong>Should
+haves</strong> if time remains in the sprint.</p>
+<div id="which-methodology-should-you-use" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="which-methodology-should-you-use" class="callout-inner">
+<h3 class="callout-title">Which methodology should you use?</h3>
+<div class="callout-content">
+<p>We’ve now seen Waterfall and several Agile frameworks. How do they
+compare, and how do you choose between them for a real project? That’s
+the focus of the next episode, <strong>Choosing a
+Methodology</strong>.</p>
+</div>
+</div>
+</div>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Suggested break point </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div class="accordion-body">
+<p>If you teach this lesson in two parts, this is the natural place to
+take your break. Session 1 ends here (Introduction through the
+Scrum/Kanban/MoSCoW theory); the Scrumban exercise below opens Session 2
+while attendees are fresh, since it needs an uninterrupted block of time
+to succeed. See the Instructor Notes for the full schedule.</p>
+</div>
+</div>
+</div>
+</div>
 <div id="scrumban" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1036,22 +1363,24 @@ one of the walls near you with the columns “To Do”, “In Progress”, and
 “Done”. Create your “backlog” by writing the features or work to be done
 on the sticky notes and putting them in the “To Do” column.</li>
 <li>(2 min) Sprint planning: Decide what work will be completed this
-sprint. Move those sticky notes to the “In Progress” column.</li>
-<li>(5 min) Sprint work: <strong>BUILD</strong>!</li>
-<li>(3 min) Sprint review: Show what you have to your customer and get
+sprint. Prioritize your backlog (try MoSCoW!) and move the sticky notes
+you commit to into the “In Progress” column.</li>
+<li>(4 min) Sprint work: <strong>BUILD</strong>!</li>
+<li>(2 min) Sprint review: Show what you have to your customer and get
 feedback. Make changes to your Kanban board as necessary (e.g., move
 completed work to “Done”, adjust work in “To Do” if need be).</li>
-<li>Repeat steps 3-5 two more times!</li>
+<li>Repeat steps 3-5 two more times! (Three sprints total, ~8 min
+each.)</li>
 </ol>
 </div>
 </div>
 </div>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>Choose two people to act as customers (either two of the attendees or
 other instructors/TAs). Assign one of them as “Customer 1” and the other
@@ -1077,10 +1406,12 @@ questions about the house: “How many wheels? How many windows and
 doors?” (etc. etc.) They don’t get as much time for this - only 4
 minutes. Then they go through a Kanban board task writing / backlog
 creation stage for 4 minutes. They will then do a “sprint” / iteration
-and try to get something created in the next few minutes. They bring it
-back to you. You tell them what’s right / wrong. They adjust their
-Kanban board / plan their “sprint” (repeat for three total
-iterations).</p>
+(about 8 minutes each: 2 min plan, 4 min build, 2 min review) and try to
+get something created. They bring it back to you. You tell them what’s
+right / wrong. They adjust their Kanban board / plan their next “sprint”
+(repeat for three total iterations). The slightly longer planning time
+is intentional — prioritizing and re-planning between sprints is the
+core skill this exercise teaches.</p>
 </blockquote>
 </div>
 </div>
@@ -1097,8 +1428,9 @@ iterations).</p>
 </div>
 </div>
 </div>
-<p>That’s it, folks! You now have knowledge of different project
-management methods for software projects.</p>
+<p>You now have hands-on experience with both ends of the methodology
+spectrum. Next, we’ll look at how to <strong>choose</strong> between
+them.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -1114,6 +1446,403 @@ consistent customer feedback.</li>
 haves”, “Could haves”, and “Won’t haves.”</li>
 </ul>
 </div>
+</div>
+</div>
+</div>
+</section></section><section id="aio-choosing"><p>Content from <a href="choosing.html">Choosing a Methodology</a></p>
+<hr>
+<p>Last updated on 2026-06-22 |
+
+        <a href="https://github.com/INTERSECT-training/Project-Management/edit/main/episodes/choosing.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 7 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do Waterfall and Agile compare?</li>
+<li>Which factors should guide my choice of methodology?</li>
+<li>Do I have to pick just one?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Compare the Waterfall model and Agile approaches side by side.</li>
+<li>Identify the factors that make one methodology a better fit than
+another.</li>
+<li>Recognize that real projects often blend approaches.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="two-ends-of-a-spectrum">Two Ends of a Spectrum<a class="anchor" aria-label="anchor" href="#two-ends-of-a-spectrum"></a>
+</h2>
+<hr class="half-width">
+<p>You’ve now seen the Waterfall model and Agile frameworks like Scrum
+and Kanban. It’s tempting to ask “which one is <em>best</em>?” — but the
+better question is “which one fits <strong>this</strong> project,
+<strong>this</strong> team, right now?”</p>
+<p>Agile does requirements gathering and design incrementally, mostly
+just before implementation. A well-executed Waterfall project can
+actually be <em>less</em> costly overall — <strong>as long as the
+requirements and design don’t change.</strong> The catch, of course, is
+that they usually do.</p>
+<figure><img src="../fig/agilevswaterfall.png" alt="A graph of project lifetime vs. effort for agile and waterfall. Waterfall has large peaks in effort at the beginning, followed by predictable iterations. Agile has smaller upfront cost but also has similar predictable iterations." class="figure mx-auto d-block"></figure><p>The graph shows the trade-off: Waterfall front-loads a large planning
+and design effort, betting that it gets things right early. Agile
+spreads that effort out, accepting some ongoing cost in exchange for the
+ability to absorb change.</p>
+</section><section><h2 class="section-heading" id="what-to-weigh">What to Weigh<a class="anchor" aria-label="anchor" href="#what-to-weigh"></a>
+</h2>
+<hr class="half-width">
+<p>No single factor decides it. Look at the project as a whole:</p>
+<table class="table">
+<colgroup>
+<col width="17%">
+<col width="44%">
+<col width="38%">
+</colgroup>
+<thead><tr>
+<th>Factor</th>
+<th>Leans <strong>Waterfall</strong>
+</th>
+<th>Leans <strong>Agile</strong>
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Requirements clarity</td>
+<td>Clear and complete up front</td>
+<td>Fuzzy or still being discovered</td>
+</tr>
+<tr>
+<td>Likelihood of change</td>
+<td>Low — stable scope</td>
+<td>High — expect it to shift</td>
+</tr>
+<tr>
+<td>Stakeholder availability</td>
+<td>Involved early, then hands-off</td>
+<td>Available throughout</td>
+</tr>
+<tr>
+<td>Team size and co-location</td>
+<td>Large, distributed, formal</td>
+<td>Small, communicative</td>
+</tr>
+<tr>
+<td>Timeline and delivery</td>
+<td>One big delivery at the end</td>
+<td>Frequent, incremental releases</td>
+</tr>
+<tr>
+<td>Risk and uncertainty</td>
+<td>Well-understood domain</td>
+<td>Novel problem or technology</td>
+</tr>
+<tr>
+<td>Regulatory / fixed-scope needs</td>
+<td>Strict documentation, fixed contract</td>
+<td>Flexible scope</td>
+</tr>
+</tbody>
+</table>
+<p>If most of your answers fall in the right-hand column — which is
+common for research software — an Agile approach will usually serve you
+better.</p>
+<div id="research-software-in-practice" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="research-software-in-practice" class="callout-inner">
+<h3 class="callout-title">Research software in practice</h3>
+<div class="callout-content">
+<p>Research software rarely starts with stable requirements: the whole
+point is often to explore something nobody has built yet. That pushes
+most research projects toward Agile. But pieces of Waterfall still show
+up — a grant proposal is essentially an upfront requirements-and-design
+document, and a paper deadline is a fixed release date. Recognizing
+<em>which parts</em> of your project are stable and which are
+exploratory helps you apply the right approach to each.</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="its-not-eitheror">It’s Not Either/Or<a class="anchor" aria-label="anchor" href="#its-not-eitheror"></a>
+</h2>
+<hr class="half-width">
+<p>In practice, very few teams run any methodology exactly as written.
+Hybrids are the norm:</p>
+<ul>
+<li>
+<strong>Waterfall-ish planning, Agile execution</strong> — do enough
+upfront design to satisfy a grant or stakeholders, then build
+iteratively in sprints.</li>
+<li>
+<strong>Scrumban</strong> — Scrum’s cadence with Kanban’s flexible
+flow.</li>
+<li>
+<strong>Phase-appropriate</strong> — a stable, well-understood
+component might be built Waterfall-style while an experimental one is
+developed iteratively.</li>
+</ul>
+<p>The methodologies are tools, not identities. Borrow what helps and
+drop what gets in the way — which is itself a very Agile thing to
+do.</p>
+<div id="which-fits-your-project" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="which-fits-your-project" class="callout-inner">
+<h3 class="callout-title">Which fits your project?</h3>
+<div class="callout-content">
+<p>Think of a software project you’re actually working on (or about to
+start).</p>
+<ul>
+<li>Where do its requirements fall on the clarity/change spectrum?</li>
+<li>Which approach — or blend — would fit best?</li>
+<li>What’s one practice from this lesson you could adopt right
+away?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>There’s no universally “best” methodology — only right-sized for a
+given project, team, and moment.</li>
+<li>Requirements clarity and likelihood of change are the biggest
+factors; stable scope favors Waterfall, change favors Agile.</li>
+<li>Most research software leans Agile, but real projects commonly blend
+approaches.</li>
+</ul>
+</div>
+</div>
+</div>
+</section></section><section id="aio-genai"><p>Content from <a href="genai.html">GenAI in Project Management</a></p>
+<hr>
+<p>Last updated on 2026-06-22 |
+
+        <a href="https://github.com/INTERSECT-training/Project-Management/edit/main/episodes/genai.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 5 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Where can generative AI genuinely help with project management?</li>
+<li>What are the risks of relying on it?</li>
+<li>What should research software engineers keep in mind?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Identify practical ways generative AI can support project management
+tasks.</li>
+<li>Recognize the risks and limitations of using genAI in a project
+workflow.</li>
+<li>Understand special considerations for using genAI in research
+software.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="a-new-tool-in-the-toolbox">A New Tool in the Toolbox<a class="anchor" aria-label="anchor" href="#a-new-tool-in-the-toolbox"></a>
+</h2>
+<hr class="half-width">
+<p>Generative AI — large language models (LLMs) like ChatGPT, Claude,
+and others — has quickly become part of many developers’ daily workflow.
+These tools are good at working with <em>text</em>, and a surprising
+amount of project management <strong>is</strong> text: user stories,
+backlogs, meeting notes, status updates, documentation.</p>
+<p>Used well, genAI can take the friction out of the routine
+writing-and-organizing parts of project management, freeing you to spend
+time on the parts that need human judgement. Used carelessly, it can
+introduce confident-sounding mistakes and erode the very communication
+that good project management depends on.</p>
+</section><section><h2 class="section-heading" id="where-it-helps">Where It Helps<a class="anchor" aria-label="anchor" href="#where-it-helps"></a>
+</h2>
+<hr class="half-width">
+<table class="table">
+<colgroup>
+<col width="23%">
+<col width="76%">
+</colgroup>
+<thead><tr>
+<th>Task</th>
+<th>How genAI can help</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Drafting user stories</strong></td>
+<td>Turn a rough feature idea into well-formed “As a… I can…”
+stories</td>
+</tr>
+<tr>
+<td><strong>Breaking down epics</strong></td>
+<td>Suggest how to decompose a large feature into sprint-sized
+tasks</td>
+</tr>
+<tr>
+<td><strong>Backlog generation</strong></td>
+<td>Brainstorm candidate features or edge cases you might have
+missed</td>
+</tr>
+<tr>
+<td><strong>Estimation support</strong></td>
+<td>Surface considerations that affect complexity (a starting point, not
+the answer)</td>
+</tr>
+<tr>
+<td><strong>Summarizing</strong></td>
+<td>Condense standup notes, long issue threads, or a sprint’s
+activity</td>
+</tr>
+<tr>
+<td><strong>Retrospectives</strong></td>
+<td>Cluster feedback into themes and suggest action items</td>
+</tr>
+<tr>
+<td><strong>Documentation</strong></td>
+<td>Draft READMEs, docstrings, changelogs, and “how to contribute”
+guides</td>
+</tr>
+<tr>
+<td><strong>Communication</strong></td>
+<td>Rephrase a technical update for a non-technical stakeholder</td>
+</tr>
+</tbody>
+</table>
+<p>The common thread: genAI is best as a <strong>fast first
+draft</strong> and a <strong>brainstorming partner</strong>, as long as
+you then review, correct, and own.</p>
+</section><section><h2 class="section-heading" id="where-to-be-careful">Where to Be Careful<a class="anchor" aria-label="anchor" href="#where-to-be-careful"></a>
+</h2>
+<hr class="half-width">
+<div id="keep-a-human-in-the-loop" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="keep-a-human-in-the-loop" class="callout-inner">
+<h3 class="callout-title">Keep a human in the loop</h3>
+<div class="callout-content">
+<ul>
+<li>
+<strong>Hallucination.</strong> LLMs can produce plausible, fluent,
+and <em>wrong</em> output — invented requirements, mis-estimated tasks,
+fabricated references. Always verify.</li>
+<li>
+<strong>False confidence.</strong> The polished tone makes errors
+easy to miss. Treat output as a draft from an eager junior colleague,
+not an authority.</li>
+<li>
+<strong>Eroding communication.</strong> Agile values <em>individuals
+and interactions</em>. If an AI-summarized standup replaces the team
+actually talking, you’ve optimized away the point of the meeting.</li>
+<li>
+<strong>Data, privacy, and IP.</strong> Anything you paste into a
+third-party tool may leave your control. Don’t share confidential,
+sensitive, or proprietary information without knowing the tool’s data
+policy.</li>
+<li>
+<strong>Accountability stays human.</strong> The AI doesn’t own the
+deadline, the bug, or the stakeholder relationship — you do.</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="for-research-software-specifically">For Research Software Specifically<a class="anchor" aria-label="anchor" href="#for-research-software-specifically"></a>
+</h2>
+<hr class="half-width">
+<div id="research-considerations" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="research-considerations" class="callout-inner">
+<h3 class="callout-title">Research considerations</h3>
+<div class="callout-content">
+<ul>
+<li>
+<strong>Reproducibility and provenance.</strong> If genAI shaped
+your plan, design, or docs, keep a record of how. Reproducibility is a
+core value of research software.</li>
+<li>
+<strong>Disclosure.</strong> Many journals, funders, and
+institutions now have policies on disclosing AI use. Check them before
+you rely on AI-generated content in outputs.</li>
+<li>
+<strong>Sensitive and unpublished data.</strong> Unpublished
+results, participant data, and embargoed work generally should
+<strong>not</strong> go into external AI tools.</li>
+<li>
+<strong>Grant and reporting language.</strong> GenAI can help draft
+progress reports and broader- impacts text — but you remain responsible
+for accuracy and for meeting the funder’s expectations.</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="the-bottom-line">The Bottom Line<a class="anchor" aria-label="anchor" href="#the-bottom-line"></a>
+</h2>
+<hr class="half-width">
+<p>GenAI is a genuinely useful project-management assistant for the
+routine, text-heavy work — drafting, summarizing, brainstorming,
+reorganizing. It is <strong>not</strong> a substitute for the human
+judgement, communication, and accountability that make a project
+succeed. The teams that benefit most are the ones who already understand
+good project management, and use AI to do it faster — not to avoid doing
+it at all.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>GenAI excels at the text-heavy parts of project management: drafting
+stories, summarizing, and brainstorming.</li>
+<li>Always verify AI output — hallucination and false confidence are
+real risks, and accountability stays with you.</li>
+<li>For research software, mind reproducibility, disclosure policies,
+and never share sensitive or unpublished data with external tools.</li>
+<li>GenAI augments good project management; it doesn’t replace human
+judgement.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1167,8 +1896,8 @@ haves”, “Could haves”, and “Won’t haves.”</li>
   "url": "https://INTERSECT-training.github.io/Project-Management/instructor/aio.html",
   "identifier": "https://INTERSECT-training.github.io/Project-Management/instructor/aio.html",
   "dateCreated": "2023-07-07",
-  "dateModified": "2026-06-16",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>
