@@ -36,7 +36,7 @@ the very communication that good project management depends on.
 
 | Task | How genAI can help |
 |------|--------------------|
-| **Drafting user stories** | Turn a rough feature idea into well-formed "As a... I can..." stories |
+| **Drafting user stories** | Turn a rough feature idea into well-formed "As a..., I want to..., so that..." stories |
 | **Breaking down epics** | Suggest how to decompose a large feature into sprint-sized tasks |
 | **Backlog generation** | Brainstorm candidate features or edge cases you might have missed |
 | **Estimation support** | Surface considerations that affect complexity (a starting point, not the answer) |
