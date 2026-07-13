@@ -64,13 +64,13 @@ During project envisioning, the client and the team define the following at high
 #### Requirements as User Stories
 
 User stories are created by describing software features or capabilities from a user's point of view.
-This can be from the perspective of either regular user s or an administrator.
-They are written in "story" form.
+This can be from the perspective of either regular users or an administrator.
+They are written in "story" form and follow a "As a **ROLE**, I want to **GOAL**, so that **IMPACT**" form.
 Here are some examples: 
 
-- "As a user, I can view my data"
-- "As a user, I can edit my data"
-- "As an administrator, I can change the access rights of a user"
+- "As a user, I want to view my data, so that I can see trends."
+- "As a user, I want to edit my data, so that I can fix mistakes or missing data."
+- "As an administrator, I want to change the access rights of a user, so that I can make systems secure."
 
 Here are some examples of user stories for non-functional requirements, though
 they may not become separate tasks:
